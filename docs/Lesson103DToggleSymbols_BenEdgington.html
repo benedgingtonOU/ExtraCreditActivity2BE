@@ -38,12 +38,16 @@ var mymap = new Map({
 var view = new SceneView({
 	container: "viewDiv",
 	map: mymap,
-	center: [-98.585522, 39.8333333],
-	zoom: 4.5
+	zoom: 4.5,
+	camera: {
+		x: -130.585522,
+		y: 19.8333333,
+		z: 2000000},
+	heading: 35,
+	tilt: 45,
+}
 });
-view.goTo({
-	heading: 45,
-	tilt: 60
+
 })
 
 var iconSymbol = {
